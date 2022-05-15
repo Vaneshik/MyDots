@@ -1,0 +1,68 @@
+URxvt.font: xft: Hack Nerd Font Mono:size=13
+URxvt.geometry: 94x24
+URxvt.internalBorder: 15
+URxvt.letterSpace: 0
+URxvt.antialias: true
+URxvt.pointerBlank: true
+URxvt.saveLines: 7000
+URxvt.scrollBar: false
+URxvt.cursorBlink: true
+URxvt.urgentOnBell: true
+URxvt.scrollTtyOutput: true
+URxvt.scrollWithBuffer: true
+URxvt.scrollTtyKeypress: true
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt*depth: 32 
+URxvt.perl-ext-common: default,matcher,clipboard,keyboard-select,url-select
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
+URxvt.matcher.button: 1
+URxvt.keysym.C-u: perl:url-select:select_next
+
+URxvt.autocopy: true
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+URxvt.keysym.Control-Up:    \033[1;5A
+URxvt.keysym.Control-Down:  \033[1;5B
+URxvt.keysym.Control-Left:  \033[1;5D
+URxvt.keysym.Control-Right: \033[1;5C
+
+! special
+URxvt.foreground: #DADAE8
+URxvt.background: [73]#1E1E29
+URxvt.cursorColor: #B1E3AD
+
+! black
+URxvt.color0: #6E6C7E
+URxvt.color8: #6E6C7E
+
+! red
+URxvt.color1: #E38C8F
+URxvt.color9: #E38C8F
+
+! green
+URxvt.color2: #B1E3AD
+URxvt.color10: #B1E3AD
+
+! yellow
+URxvt.color3: #EBDDAA
+URxvt.color11: #EBDDAA
+
+! blue
+URxvt.color4: #A4B9EF
+URxvt.color12: #A4B9EF
+
+! magenta
+URxvt.color5: #C6AAE8
+URxvt.color13: #C6AAE8
+
+! cyan
+URxvt.color6: #E5B4E2
+URxvt.color14: #E5B4E2
+
+! white
+URxvt.color7: #DADAE8
+URxvt.color15: #DADAE8
+

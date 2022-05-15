@@ -1,0 +1,84 @@
+" Vim settings
+set nocompatible		" Disable vi compatibility
+syntax enable			" Enable syntax highlight
+set encoding=utf-8		" Set UTF-8 encoding
+filetype plugin indent on	" Enable file recognition
+set guioptions=			" Disable GUI scrollbar
+set showtabline=0 		" Disable tablines
+set number 			" Row numeration
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set wrap linebreak nolist 	" Line word break
+set cursorline			" Highlight current line
+set ttyfast
+set ttimeoutlen=10		" Decrease timeout
+let &t_SI.="\e[5 q"		"SI = Insertion mode
+let &t_SR.="\e[3 q"		"SR = Replacement mode
+let &t_EI.="\e[1 q" 	"EI = Normal mode
+
+" Plugins
+call plug#begin('~/.vim/plugged')
+Plug 'xiyaowong/nvim-transparent'
+Plug 'arcticicestudio/nord-vim'  
+Plug 'sts10/vim-pink-moon'
+Plug 'bluz71/vim-moonfly-colors'
+Plug 'ajmwagar/vim-deus'
+Plug 'bluz71/vim-nightfly-guicolors'                " My Colorschemes X_X
+Plug 'Rigellute/shades-of-purple.vim'
+Plug 'wadackel/vim-dogrun'
+Plug 'folke/tokyonight.nvim'
+Plug 'haishanh/night-owl.vim'
+Plug 'rafi/awesome-vim-colorschemes'
+
+Plug 'vim-airline/vim-airline' " Status bar
+Plug 'ryanoasis/vim-devicons'  " Cool icons
+Plug 'mhinz/vim-startify' " Start screen
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+Plug 'lyokha/vim-xkbswitch'
+Plug 'luochen1990/rainbow'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'francoiscabrol/ranger.vim'
+Plug 'rbgrouleff/bclose.vim'
+call plug#end()
+
+" Customization
+syntax enable
+colorscheme onedark
+set termguicolors
+let g:transparent_enabled = v:true
+
+" Color brackets
+let g:rainbow_active = 1
+let g:rainbow_conf = {
+\	'guifgs': ['Gold', 'Orchid', 'LightSkyBlue'],
+\}
+
+" Airline settings
+let g:airline_powerline_fonts = 1  " Enable poweline fonts
+let g:airline#extensions#keymap#enabled = 0  " Ignore current keymap
+let g:airline_section_z = "\ue0a1:%l/%L Col:%c"  " Custom cursor position
+let g:Powerline_symbols='unicode'  " Unicode support
+
+" Startify settings
+let g:startify_bookmarks = [
+  \ { 'z': '~/.zshrc' },
+  \ { 'v': '~/.config/nvim/init.vim' },
+  \ { 'x': '~/Documents/notes.txt' },
+  \ ]
+let g:startify_lists = [
+      \ { 'header': ['   Bookmarks'],       'type': 'bookmarks' },
+      \ { 'header': ['   MRU'],            'type': 'files' },
+      \ { 'header': ['   MRU '. getcwd()], 'type': 'dir' },
+      \ ]
+let g:startify_custom_header =
+		\startify#pad(split(system('figlet -f larry3d -w 100 cofowl'), '\n'))
+
+" Keyboad layout
+let g:XkbSwitchEnabled = 1
+
+
+" Keybindings
+nmap <c-n> :Startify<cr>
+nnoremap <C-p> :Files<Cr>

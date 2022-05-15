@@ -1,0 +1,17 @@
+13|136|around
+fir|first.png|file
+|mountains_night_clouds_peaks_120300_1920x1080.jpg|file
+Wallpapers|Wallpapers|file
+|Wallpapers|file
+Pictures|Pictures|file
+Pictur|Pictures|file
+|snow-covered-mountain-moon-4k-by-2560x1700.jpg|file
+|ian-valerio-CAFq0pv9HjY-unsplash.jpg|file
+Pi|Pictures|file
+outp|output|around
+|mountains-minimalism-16-3840x2160.jpg|file
+|151151.jpg|file
+W|Wallpapers|file
+Pic|Pictures|file
+enabled|enabled|around
+config|configuration|around
